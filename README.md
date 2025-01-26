@@ -47,7 +47,7 @@ TrendForge is a cutting-edge platform designed to revolutionize NFT market analy
 
 # Clone the repository:
 
-git clone https://github.com/your-username/trendforge.git
+git clone https://github.com/Sushant041/trendforge.git
 cd trendforge
 
 **Install dependencies:**
