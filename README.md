@@ -47,26 +47,15 @@ TrendForge is a cutting-edge platform designed to revolutionize NFT market analy
 
 # Clone the repository:
 
-bash
-Copy
 git clone https://github.com/your-username/trendforge.git
 cd trendforge
-Install dependencies:
 
-bash
-Copy
+**Install dependencies:**
 npm install
-Set up environment variables:
-Create a .env file in the root directory and add your API keys:
 
-env
-Copy
-REACT_APP_BITSCRUNCH_API_KEY=your_api_key_here
-Start the development server:
-
-bash
-Copy
+**Start the development server:**
 npm start
-Open the app in your browser:
+
+**Open the app in your browser:**
 Visit http://localhost:3000 to view TrendForge.
 
