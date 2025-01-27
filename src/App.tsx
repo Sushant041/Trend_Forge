@@ -10,7 +10,7 @@ import NftList from "./components/NftList";
 import { SelectTimerange } from "./components/SelectTimerange.tsx";
 import WalletAnalytics from "./components/WalletAnalytics.tsx";
 import TradersTrend from "./components/TradersTrend.tsx";
-import WashtradeInsights from "./components/WashTardeINsight.tsx";
+import WashtradeInsights from "./components/WashTardeInsight.tsx";
 
 interface Blockchain {
   metadata: {
