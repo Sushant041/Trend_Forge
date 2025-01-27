@@ -78,10 +78,10 @@ const App: React.FC<NftListProps> = ({ optionBlockchain }) => {
             offset: 0,
             limit: 30,
             time_range: nftTimeRange,
-            "x-api-key": "df51d1d20cd88215009bea3b1861cf4d",
+            "x-api-key": "cbe32ab2a4ce0186852a6a5299b214fd",
           },
           headers: {
-            Authorization: "df51d1d20cd88215009bea3b1861cf4d", // Replace with your API key
+            Authorization: "cbe32ab2a4ce0186852a6a5299b214fd", // Replace with your API key
           },
         }
       );
