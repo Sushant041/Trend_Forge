@@ -102,9 +102,9 @@ const Predictor: React.FC<PredictorProps> = ({ data, metric }) => {
 
   return (
     <>
-    <div className='text-3xl font-semi-bold'>NFT Market Trend Prediction</div>
+    {/* <div className='text-3xl font-semi-bold'>NFT Market Trend Prediction</div> */}
     <div className='border-2 flex flex-col items-center border-zinc-600 px-3 py-[30px] rounded w-[80%]'>
-      <div className="flex items-center gap-2 mb-3">
+      <div className="flex flex-col md:flex-row items-center gap-2 mb-3">
         <input
           type="number"
           value={days}

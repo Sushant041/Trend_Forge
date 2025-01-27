@@ -15,6 +15,7 @@ interface Blockchain {
 interface ChainSelectProps {
   optionBlockchain: Blockchain[];
   setBlockchain: (value: number | string) => void;
+  setBlockchainString: (value : string) => void;
   blockchain: number | string;
   val: string
 }
@@ -22,6 +23,7 @@ interface ChainSelectProps {
 const ChainSelect: React.FC<ChainSelectProps> = ({
   optionBlockchain,
   setBlockchain,
+  setBlockchainString,
   blockchain,
   val,
 }) => {
@@ -53,7 +55,10 @@ const ChainSelect: React.FC<ChainSelectProps> = ({
         return res})
       }
       formatOptionLabel={formatOptionLabel}
-      onChange={(selectedOption) => setBlockchain(val === "id" ? selectedOption?.value || 1 : selectedOption?.name === "Ordinals" ? "bitcoin" : selectedOption?.name?.split(" ")[0].toLowerCase() || "Ethereum")}
+      onChange={(selectedOption) => {
+        setBlockchain(val === "id" ? selectedOption?.value || 1 : selectedOption?.name === "Ordinals" ? "bitcoin" : selectedOption?.name?.split(" ")[0].toLowerCase() || "Ethereum")
+        setBlockchainString(selectedOption?.name === "Ordinals" ? "bitcoin" : selectedOption?.name?.split(" ")[0].toLowerCase() || "ethereum")
+      }}
       className="react-select-container"
       styles={{
         control: (base) => ({

@@ -50,6 +50,7 @@ interface OrderOptionType {
 const App: React.FC<NftListProps> = ({ optionBlockchain }) => {
   // State variables
   const [blockchain, setBlockchain] = useState<number | string>(1); // Default to Ethereum
+  const [blockchainString, setBlockchainString] = useState<string>("ethereum");
   const [sortBy, setSortBy] = useState<string>("price");
   const [metrics, setMetrics] = useState<string>("price");
   const [sortOrder, setSortOrder] = useState<string>("desc");
@@ -102,7 +103,7 @@ const App: React.FC<NftListProps> = ({ optionBlockchain }) => {
       {/* <h1 className="text-3xl font-bold mb-4">NFT By Chain</h1> */}
 
       {/* Blockchain, Sorting, and Filters */}
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-wrap gap-4 md:justify-between " >
         {/* Blockchain Selector */}
         <div className="flex flex-col">
           <label
@@ -114,6 +115,7 @@ const App: React.FC<NftListProps> = ({ optionBlockchain }) => {
           <ChainSelect
             optionBlockchain={optionBlockchain}
             setBlockchain={setBlockchain}
+            setBlockchainString={setBlockchainString}
             blockchain={blockchain}
             val="id"
           />
@@ -190,7 +192,7 @@ const App: React.FC<NftListProps> = ({ optionBlockchain }) => {
 
       {/* NFT List */}
       {isLoading ? (
-        <div className="flex w-full gap-4">
+        <div className="flex w-full gap-4 md:flex-row flex-col" >
           <div className="skeleton-card">
             <div className="skeleton-image"></div>
             <div className="skeleton-title"></div>

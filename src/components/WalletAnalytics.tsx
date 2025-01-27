@@ -39,6 +39,7 @@ const WalletAnalytics: React.FC<WalletListProp> = ({optionBlockchain}) => {
   const [blockchain, setBlockchain] = useState<string | number>("ethereum");
   const [sortBy, setSortBy] = useState<string| number>("volume");
   const [timeRange, setTimeRange] = useState<string>("all");
+  const [blockchainString, setBlockchainString] = useState<string>("ethereum");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -154,7 +155,7 @@ const WalletAnalytics: React.FC<WalletListProp> = ({optionBlockchain}) => {
       <div className="flex flex-wrap gap-6 mb-6">
         <div>
           <label className="block text-sm font-medium text-gray-200">Blockchain</label>
-          <ChainSelect optionBlockchain={optionBlockchain} setBlockchain={setBlockchain} blockchain={blockchain} val="name" />
+          <ChainSelect optionBlockchain={optionBlockchain} setBlockchain={setBlockchain} setBlockchainString={setBlockchainString} blockchain={blockchain} val="name" />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-200">Sort By</label>
