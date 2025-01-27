@@ -36,7 +36,8 @@ Dive into wallet-specific analytics, offering a deep understanding of transactio
 ![Screenshot 2025-01-27 001556.png](https://cdn.dorahacks.io/static/files/194a3ef7c9a80d9e964de7d45099b117.png)
 
 
-### 5. 📈 Real-Time Data:** Leverage bitsCrunch APIs for accurate and up-to-date NFT market data.
+### 5. 📈 Real-Time Data:
+Leverage bitsCrunch APIs for accurate and up-to-date NFT market data.
 
 # Demo
 [Demo link](https://trend-forge.vercel.app/)
